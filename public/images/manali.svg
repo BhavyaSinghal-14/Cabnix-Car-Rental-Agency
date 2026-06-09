@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D6EAF8"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="mount" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#34495E"/>
+      <stop offset="100%" stop-color="#2C3E50"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="24" fill="url(#sky)"/>
+  <circle cx="650" cy="150" r="100" fill="#F39C12" opacity="0.1"/>
+  
+  <!-- Mountains -->
+  <polygon points="50,400 250,150 450,400" fill="url(#mount)"/>
+  <polygon points="250,150 200,210 230,220 210,250 250,250" fill="#FFFFFF" opacity="0.9"/>
+
+  <polygon points="250,400 480,100 700,400" fill="#1C2833"/>
+  <polygon points="480,100 430,170 460,180 440,210 480,210" fill="#FFFFFF" opacity="0.9"/>
+  
+  <polygon points="120,400 350,200 550,400" fill="#2E4053" opacity="0.8"/>
+
+  <!-- Pine Trees -->
+  <g fill="#196F3D">
+    <polygon points="150,400 135,340 165,340"/>
+    <polygon points="150,350 140,310 160,310"/>
+    <polygon points="320,400 300,320 340,320"/>
+    <polygon points="320,335 310,290 330,290"/>
+    <polygon points="580,400 560,310 600,310"/>
+    <polygon points="580,325 570,280 590,280"/>
+  </g>
+
+  <!-- Winding Road -->
+  <path d="M 100 500 C 200 440, 350 430, 400 410 C 450 390, 500 410, 700 400 L 750 415 L 100 500" fill="#5D6D7E"/>
+  <path d="M 120 500 C 210 445, 345 435, 395 415 C 445 395, 495 411, 680 402" stroke="#F4B942" stroke-width="3" stroke-dasharray="12,12" stroke-linecap="round" fill="none"/>
+
+  <g transform="translate(400, 460)" text-anchor="middle">
+    <text font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="18" fill="#1B4F72" letter-spacing="3">MANALI, HIMACHAL</text>
+  </g>
+</svg>

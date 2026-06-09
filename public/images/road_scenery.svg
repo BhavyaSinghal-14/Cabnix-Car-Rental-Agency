@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="100%" height="100%">
+  <defs>
+    <!-- Background morning gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D5A5A"/>
+      <stop offset="60%" stop-color="#4C9C9C"/>
+      <stop offset="100%" stop-color="#EBF1FA"/>
+    </linearGradient>
+    
+    <!-- Mountains shade gradients -->
+    <linearGradient id="mountGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A1C6C6"/>
+      <stop offset="100%" stop-color="#4B777D"/>
+    </linearGradient>
+    <linearGradient id="mountGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#739F9F"/>
+      <stop offset="100%" stop-color="#214D53"/>
+    </linearGradient>
+    <linearGradient id="mountGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4A7575"/>
+      <stop offset="100%" stop-color="#143439"/>
+    </linearGradient>
+    
+    <!-- Road Surface Gradient -->
+    <linearGradient id="roadSurf" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4E5D61"/>
+      <stop offset="100%" stop-color="#2B3436"/>
+    </linearGradient>
+
+    <!-- Warm sun glow -->
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE79A" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#F4B942" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#EBF1FA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky Backing -->
+  <rect width="1200" height="600" rx="30" fill="url(#skyGrad)"/>
+
+  <!-- Morning Rising Sun -->
+  <circle cx="950" cy="180" r="220" fill="url(#sunGlow)"/>
+  <circle cx="950" cy="180" r="45" fill="#FFFFFF" fill-opacity="0.9"/>
+
+  <!-- Distant mountain peaks (Layer 1) -->
+  <path d="M -50 600 L 120 420 L 320 490 L 550 360 L 780 480 L 1020 320 L 1250 600 Z" fill="url(#mountGrad1)" opacity="0.5"/>
+
+  <!-- Middle mountain peaks (Layer 2) with snow caps -->
+  <path d="M -50 600 L 180 340 L 290 320 L 480 430 L 680 290 L 880 410 L 1110 260 L 1250 600 Z" fill="url(#mountGrad2)" opacity="0.8"/>
+  
+  <!-- Snow Peaks overlay details -->
+  <polygon points="180,340 140,380 210,380" fill="#FFFFFF" opacity="0.7"/>
+  <polygon points="680,290 640,335 710,335" fill="#FFFFFF" opacity="0.7"/>
+  <polygon points="1110,260 1070,305 1140,305" fill="#FFFFFF" opacity="0.7"/>
+
+  <!-- Closer dark forest mountain ridges (Layer 3) -->
+  <path d="M -50 600 L 80 440 L 250 390 L 390 440 L 590 330 L 850 490 L 1050 380 L 1250 600 Z" fill="url(#mountGrad3)"/>
+
+  <!-- Minimal pine tree vector graphics on slopes -->
+  <g fill="#0E2326" opacity="0.6">
+    <polygon points="100,430 95,445 105,445" />
+    <polygon points="110,425 105,440 115,440" />
+    <polygon points="120,432 116,445 124,445" />
+    <polygon points="260,385 255,400 265,400" />
+    <polygon points="275,380 270,395 280,395" />
+    <polygon points="580,325 573,345 587,345" />
+    <polygon points="595,320 589,340 601,340" />
+    <polygon points="610,328 605,348 615,348" />
+  </g>
+
+  <!-- Winding Two-Lane Mountain Highway -->
+  <path d="M -50 600
+           C 250 510, 480 395, 610 395
+           C 710 395, 850 420, 1020 440
+           L 1250 410
+           L 1250 600
+           L -50 600 Z" fill="url(#roadSurf)"/>
+
+  <!-- Highway Lane divider dashed line -->
+  <path d="M -20 535 C 180 475, 430 405, 600 405 C 720 405, 870 425, 1030 442" 
+        stroke="#F4B942" stroke-width="4" stroke-dasharray="25, 18" stroke-linecap="round" fill="none" opacity="0.8"/>
+
+  <!-- White solid safety border line -->
+  <path d="M -50 594 C 240 502, 470 386, 610 386 C 700 386, 840 411, 1010 431" 
+        stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.6"/>
+
+  <!-- Premium Car cruising down the scenic road -->
+  <g transform="translate(420, 310) scale(0.6)">
+    <!-- Sleek sedan outline on road -->
+    <path d="M 15 150 
+             L 50 150
+             L 60 120
+             C 65 95, 80 75, 105 70
+             L 145 65
+             C 170 65, 230 65, 255 70
+             C 275 75, 330 110, 350 128
+             L 405 130
+             C 415 132, 435 142, 440 160
+             L 435 195
+             L 415 200
+             C 410 180, 385 180, 380 200
+             L 155 200
+             C 150 180, 125 180, 120 200
+             L 25 200
+             C 20 195, 15 180, 15 168 Z" fill="#1C2D37"/>
+             
+    <!-- Wheels -->
+    <circle cx="137" cy="200" r="30" fill="#111111"/>
+    <circle cx="137" cy="200" r="18" fill="#555555"/>
+    <circle cx="397" cy="200" r="30" fill="#111111"/>
+    <circle cx="397" cy="200" r="18" fill="#555555"/>
+
+    <!-- Light glow -->
+    <polygon points="440,160 550,150 560,195 435,185" fill="#FFEAA7" opacity="0.15"/>
+  </g>
+
+  <!-- Giant pine tree silhouette in foreground -->
+  <g fill="#0B1C1D">
+    <path d="M 1150 620 L 1110 420 L 1190 420 Z"/>
+    <path d="M 1150 480 L 1090 350 L 1210 350 Z"/>
+    <path d="M 1150 390 L 1080 290 L 1220 290 Z"/>
+    <!-- Trunk -->
+    <rect x="1144" y="580" width="12" height="40" fill="#422518"/>
+  </g>
+
+  <!-- Subtle Elegant Frame Border -->
+  <rect x="0" y="0" width="1200" height="600" rx="30" fill="none" stroke="#FFFFFF" stroke-width="4" opacity="0.1"/>
+
+  <!-- Aesthetic Info Text (Lower Left Overlay) -->
+  <g transform="translate(60, 540)" font-family="system-ui, -apple-system, sans-serif" fill="#FFFFFF">
+    <text font-weight="800" font-size="24" letter-spacing="3" opacity="0.95">CABNIX EXPEDITIONS</text>
+    <text font-weight="500" font-size="14" opacity="0.7" y="24">Safe, structural high-range journeys across the mountain terrain</text>
+  </g>
+</svg>

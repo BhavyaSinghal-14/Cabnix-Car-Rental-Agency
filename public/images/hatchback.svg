@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2F1F1"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="carBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1F6E6E"/>
+      <stop offset="100%" stop-color="#154E4E"/>
+    </linearGradient>
+    <linearGradient id="roadGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EEEEEE"/>
+      <stop offset="50%" stop-color="#DCDCDC"/>
+      <stop offset="100%" stop-color="#EEEEEE"/>
+    </linearGradient>
+    <linearGradient id="wheelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4A4A4A"/>
+      <stop offset="100%" stop-color="#1C1C1C"/>
+    </linearGradient>
+    <linearGradient id="windowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D3436" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#1E272C" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F4B942"/>
+      <stop offset="100%" stop-color="#D49922"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" rx="24" fill="url(#skyGrad)"/>
+
+  <!-- Minimal Decorative Circles -->
+  <circle cx="700" cy="120" r="80" fill="#1F6E6E" fill-opacity="0.04"/>
+  <circle cx="150" cy="350" r="120" fill="#F4B942" fill-opacity="0.03"/>
+
+  <!-- Ground / Road Shadow -->
+  <ellipse cx="400" cy="400" rx="350" ry="12" fill="#000000" fill-opacity="0.1"/>
+  <rect x="50" y="394" width="700" height="6" rx="3" fill="url(#roadGrad)"/>
+
+  <!-- Subtle Mountain Silhouette behind Hatchback -->
+  <path d="M 50 394 L 180 290 L 320 350 L 500 240 L 620 320 L 750 394 Z" fill="#E2ECEC" opacity="0.7"/>
+
+  <!-- CAR DESIGN (Modern Hatchback side profile inspired by Maruti Swift) -->
+  <g transform="translate(180, 190)">
+    <!-- Main Hatchback Body -->
+    <!-- Back spoiler to nose -->
+    <path d="M 40 140 
+             C 38 120, 42 85, 55 75 
+             C 65 68, 120 60, 160 60
+             C 180 60, 240 92, 275 110
+             C 295 120, 360 130, 375 145
+             C 385 155, 390 178, 385 190
+             L 370 195
+             L 350 200
+             L 340 200
+             C 335 180, 310 180, 305 200
+             L 125 200
+             C 120 180, 95 180, 90 200
+             L 20 200
+             C 15 195, 12 180, 15 168
+             C 18 155, 30 145, 40 140 Z" fill="url(#carBody)"/>
+
+    <!-- Front bumper and headlight detail -->
+    <path d="M 360 142 C 372 145, 385 155, 385 168 L 362 168 Z" fill="url(#accentGrad)"/>
+    
+    <!-- Tail light detail -->
+    <path d="M 22 148 C 16 150, 14 162, 25 165 Z" fill="#FF4757"/>
+
+    <!-- Windows (Glossy Dark) -->
+    <path d="M 72 135 
+             L 70 95
+             C 72 82, 105 78, 128 78
+             L 155 78
+             L 155 135 Z" fill="url(#windowGrad)"/>
+    <path d="M 166 135 
+             L 166 78
+             L 220 78
+             C 235 88, 255 106, 268 135 Z" fill="url(#windowGrad)"/>
+
+    <!-- Door Seams and Handles -->
+    <line x1="160" y1="78" x2="160" y2="198" stroke="#103F3F" stroke-width="2"/>
+    <line x1="70" y1="135" x2="265" y2="135" stroke="#103F3F" stroke-width="1.5" opacity="0.6"/>
+    <rect x="125" y="115" width="20" height="6" rx="2" fill="#1C1C1C"/>
+    <rect x="185" y="115" width="20" height="6" rx="2" fill="#1C1C1C"/>
+
+    <!-- Wheel Arches -->
+    <path d="M 80 200 C 80 170, 135 170, 135 200 Z" fill="#154E4E"/>
+    <path d="M 295 200 C 295 170, 350 170, 350 200 Z" fill="#154E4E"/>
+
+    <!-- Wheels (Detailed Alloy Design) -->
+    <!-- Rear Wheel -->
+    <g transform="translate(107, 200)">
+      <circle cx="0" cy="0" r="32" fill="url(#wheelGrad)"/>
+      <circle cx="0" cy="0" r="22" fill="#CCCCCC" stroke="#4A4A4A" stroke-width="3"/>
+      <!-- Spokes -->
+      <line x1="0" y1="-22" x2="0" y2="22" stroke="#333333" stroke-width="2"/>
+      <line x1="-22" y1="0" x2="22" y2="0" stroke="#333333" stroke-width="2"/>
+      <line x1="-15" y1="-15" x2="15" y2="15" stroke="#333333" stroke-width="2"/>
+      <line x1="15" y1="-15" x2="-15" y2="15" stroke="#333333" stroke-width="2"/>
+      <circle cx="0" cy="0" r="8" fill="#1F6E6E"/>
+    </g>
+    <!-- Front Wheel -->
+    <g transform="translate(322, 200)">
+      <circle cx="0" cy="0" r="32" fill="url(#wheelGrad)"/>
+      <circle cx="0" cy="0" r="22" fill="#CCCCCC" stroke="#4A4A4A" stroke-width="3"/>
+      <!-- Spokes -->
+      <line x1="0" y1="-22" x2="0" y2="22" stroke="#333333" stroke-width="2"/>
+      <line x1="-22" y1="0" x2="22" y2="0" stroke="#333333" stroke-width="2"/>
+      <line x1="-15" y1="-15" x2="15" y2="15" stroke="#333333" stroke-width="2"/>
+      <line x1="15" y1="-15" x2="-15" y2="15" stroke="#333333" stroke-width="2"/>
+      <circle cx="0" cy="0" r="8" fill="#1F6E6E"/>
+    </g>
+  </g>
+
+  <!-- Title or Branding Elements -->
+  <g transform="translate(400, 440)" text-anchor="middle">
+    <text font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="20" fill="#1F6E6E" letter-spacing="4">CABNIX HATCHBACK CLASS</text>
+    <text font-family="system-ui, -apple-system, sans-serif" font-weight="500" font-size="12" fill="#2D3436" opacity="0.6" y="20">Maruti Swift or Equivalent Economy Fleet</text>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "Cabnix",
+  "description": "Premium luxury-inspired cab booking service in North India, offering Hatchback, Sedan, and SUV rides.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

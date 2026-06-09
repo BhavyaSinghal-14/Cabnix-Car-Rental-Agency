@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A2D9CE"/>
+      <stop offset="100%" stop-color="#E8F8F5"/>
+    </linearGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16A085"/>
+      <stop offset="100%" stop-color="#0E6251"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="24" fill="url(#sky)"/>
+  
+  <!-- Backdrop lush green hills -->
+  <path d="M -50 350 Q 180 180, 400 280 T 850 350 L 850 500 L -50 500 Z" fill="#117A65" opacity="0.4"/>
+  <path d="M -100 370 Q 250 200, 500 310 T 900 370 L 900 500 L -100 500 Z" fill="#148F77" opacity="0.6"/>
+
+  <!-- Emerald Lake -->
+  <rect x="0" y="320" width="800" height="180" fill="url(#lake)"/>
+
+  <!-- Reflection of hills in the water -->
+  <ellipse cx="300" cy="380" rx="220" ry="40" fill="#0E6251" opacity="0.2"/>
+  
+  <!-- Wooden Rowing Boat -->
+  <g transform="translate(320, 360)">
+    <path d="M 10 20 L 70 20 L 80 12 L 100 12 C 70 30, 20 30, 0 16 Z" fill="#784212"/>
+    <line x1="45" y1="18" x2="15" y2="-5" stroke="#F4D03F" stroke-width="2" stroke-linecap="round"/>
+    <line x1="50" y1="18" x2="80" y2="-5" stroke="#F4D03F" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ripple lines -->
+  <line x1="120" y1="350" x2="250" y2="350" stroke="#73C6B6" stroke-width="2" opacity="0.5"/>
+  <line x1="420" y1="410" x2="680" y2="410" stroke="#73C6B6" stroke-width="1.5" opacity="0.4"/>
+
+  <g transform="translate(400, 460)" text-anchor="middle">
+    <text font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="18" fill="#F0FBF9" letter-spacing="3">NAINITAL, LAKE</text>
+  </g>
+</svg>

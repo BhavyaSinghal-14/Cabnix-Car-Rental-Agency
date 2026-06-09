@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B1C28"/>
+      <stop offset="100%" stop-color="#402D4E"/>
+    </linearGradient>
+    <linearGradient id="river" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A1DCE9"/>
+      <stop offset="100%" stop-color="#226688"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="24" fill="url(#sky)"/>
+  
+  <!-- Tiny Stars -->
+  <g fill="#FFFFFF" opacity="0.8">
+    <circle cx="120" cy="80" r="1.5"/>
+    <circle cx="250" cy="120" r="1"/>
+    <circle cx="340" cy="60" r="2"/>
+    <circle cx="480" cy="90" r="1.5"/>
+    <circle cx="620" cy="140" r="2"/>
+    <circle cx="710" cy="70" r="1"/>
+    <circle cx="210" cy="40" r="1"/>
+    <circle cx="580" cy="50" r="1.5"/>
+  </g>
+
+  <!-- Giant steep rocks and mountains -->
+  <polygon points="-50,400 120,180 320,400" fill="#2E4053"/>
+  <polygon points="450,400 680,150 850,400" fill="#2E4053"/>
+  
+  <polygon points="0,420 280,240 500,420" fill="#1C2833" opacity="0.8"/>
+  <polygon points="320,420 550,220 780,420" fill="#1C2833" opacity="0.8"/>
+
+  <!-- Parvati River rushing between rocks -->
+  <path d="M 280 380 Q 400 370, 420 395 T 320 500 L 0 500 L 0 420 Q 200 390, 280 380 Z" fill="url(#river)"/>
+
+  <!-- Water streaks -->
+  <path d="M 120 405 Q 260 390, 310 405" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 60 435 Q 210 415, 270 455" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.8"/>
+
+  <!-- Pine Trees -->
+  <g fill="#0E3A20">
+    <polygon points="120,400 105,320 135,320"/>
+    <polygon points="120,335 110,285 130,285"/>
+    <polygon points="70,410 58,340 82,340"/>
+    <polygon points="650,400 635,310 665,310"/>
+    <polygon points="650,325 640,270 660,270"/>
+    <polygon points="700,410 688,335 712,335"/>
+  </g>
+
+  <g transform="translate(400, 460)" text-anchor="middle">
+    <text font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="18" fill="#FADBD8" letter-spacing="3">KASOL, VALLEY</text>
+  </g>
+</svg>
